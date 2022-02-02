@@ -39,7 +39,7 @@ elif month == 2:
 else:
     day_limit = 30
 
-# check if day entered lies month or not
+# check if day entered lies in month or not
 # if not ask user to enter it again
 if day > day_limit:
     date = input("Enter a valid date between year 1800 and 2025 ")
