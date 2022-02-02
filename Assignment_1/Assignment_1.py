@@ -14,7 +14,7 @@ if len(word_split) > 1:
             counter[word_split[i]] = 1
 else:
     # a for loop starting from first to last element of string
-    for i in range(len(input_string)):
+    for i in range(0,len(input_string)):
         if input_string[i] in counter:  # if letter already exists then add one to it, if it doesn't then add it to the dictionary
             counter[input_string[i]] = counter[input_string[i]] + 1
         else:
