@@ -1,5 +1,5 @@
-true_list = ["y", "Y", "yes", "Yes"]
-false_list = ["n", "N", "no", "No"]
+true_list = ["y", "Y", "yes", "Yes", "YES"]
+false_list = ["n", "N", "no", "No", "NO"]
 choice = input("Do you want to add a student (y/n) ")
 temp_key = 0
 data = {}
