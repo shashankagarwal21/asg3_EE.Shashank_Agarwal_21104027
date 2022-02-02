@@ -8,14 +8,13 @@ l = 0
 
 # loop for printing the pattern
 while j <= length:
+    # loop for the spaces
+    for k in range(0, l):
+        print(" ", end=" ")
 
-# loop for the spaces
-    for k in range(0,l):
-        print(" ",end = " ")
-
-# loop for character of pattern
-    for i in range(0,length-j):
-        print(pattern[i],end=" ")
+    # loop for character of pattern
+    for i in range(0, length-j):
+        print(pattern[i], end=" ")
 
     print("\n")
 
