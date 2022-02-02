@@ -48,7 +48,7 @@ if day > day_limit:
     month = int(list_date[1])
     year = int(list_date[2])
 
-day = day + 1 # add 1 to the current day
+day = day + 1  # add 1 to the current day
 
 # if day overflows day limit then increase month
 if day > day_limit:
