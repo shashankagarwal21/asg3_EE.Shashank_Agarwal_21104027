@@ -1,5 +1,5 @@
 fib = [0, 1]  # First 2 terms of fibonacci sequence
-new_ele = 0  # variable to aff next number
+new_ele = 0  # variable to add next number
 average = 0  # variable for average
 
 num_terms = int(input("How may terms would you like to calculate "))  # Number of element in list
