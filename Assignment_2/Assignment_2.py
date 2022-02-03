@@ -41,7 +41,7 @@ else:
 
 # check if day entered lies in month or not
 # if not ask user to enter it again
-if day > day_limit:
+while day > day_limit:
     date = input("Enter a valid date between year 1800 and 2025 ")
     list_date = date.split("/")
     day = int(list_date[0])
