@@ -54,6 +54,7 @@ print("\n")
 print("Data sorted by SID: " + str(key_sorted_data))
 # END
 
+
 # Search a student details with SID and print name of that student
 sid_input = int(input("Enter SID of student you want to search "))
 print(str(data[sid_input]) + " has SID " + str(sid_input))
