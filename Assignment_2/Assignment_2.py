@@ -1,4 +1,3 @@
-month_upper = [1, 3, 5, 7, 8, 10, 12]  # list of month with 31 days
 date = input("Enter date in DD/MM/YYYY format : ")  # input from user
 leap_check = False
 day_limit = 0  # limit of days in month
@@ -24,7 +23,7 @@ while True:
         leap_check = False
 
     # check what is number of days in month
-    if month in month_upper:
+    if month in [1, 3, 5, 7, 8, 10, 12]:
         day_limit = 31
     elif month == 2:
         if leap_check:
@@ -38,7 +37,7 @@ while True:
         break
 
     else:
-        date = input("Enter a valid date : ")
+        date = input("Enter a valid date in DD/MM/YYYY format: ")
 
 
 day = day + 1  # add 1 to the current day
