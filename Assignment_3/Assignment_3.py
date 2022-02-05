@@ -6,7 +6,7 @@ num_elements = int(input("How many numbers do you want to enter "))  # take inpu
 
 # loop to add numbers to input list
 for i in range(0, num_elements):
-    ele = int(input("Enter number " + str(i + 1) + " "))
+    ele = float(input("Enter number " + str(i + 1) + " "))
     input_list.append(ele)
 
 # loop to make a list of tuple with first element as number and second as its square
