@@ -4,10 +4,13 @@ grade = {4: ["D", "Poor"], 5: ["C", "Below Average"], 6: ["C+", "Average"], 7: [
 grade_point = int(input("Enter your Grade point "))  # take grade point from user
 
 # if grade point is greater than 4 then search the dictionary
-if 4 <= grade_point <= 10:
-    print("Your grade is \'" + grade[grade_point][0] + "\' and " + grade[grade_point][1] + " Performance")
-# else print failed
-elif 0 <= grade_point < 4:
-    print("Sorry you failed")
-else:
-    print("please enter a valid grade point")
+while True:
+    if 4 <= grade_point <= 10:
+        print("Your grade is \'" + grade[grade_point][0] + "\' and " + grade[grade_point][1] + " Performance")
+        break
+    # else print failed
+    elif 0 <= grade_point < 4:
+        print("Sorry you failed")
+        break
+    else:
+        grade_point = int(input("please enter a valid grade point "))
