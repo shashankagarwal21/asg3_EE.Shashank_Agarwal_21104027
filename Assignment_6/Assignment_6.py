@@ -21,47 +21,44 @@ while True:
     choice = input("Do you want to add another student(y/n) ")
 # END
 
+if len(data) == 0:
+    print("List is empty, you didn't enter any data")
 
-# Print students details stored in the dictionary
-print("\n")
-print("Student data: " + str(data))
-# END
+else:
+    # Print students details stored in the dictionary
+    print("Student data: " + str(data))
+    # END
 
+    # Sort dictionary using student names
+    data_key = list(data.keys())
+    data_value = list(data.values())
+    data_value.sort()
 
-# Sort dictionary using student names
-data_key = list(data.keys())
-data_value = list(data.values())
-data_value.sort()
+    # sorting loop
+    for i in data_value:
+        for k in data_key:
+            if data[k] == i:
+                value_sorted_data[k] = data[k]
+                break
 
-# sorting loop
-for i in data_value:
-    for k in data_key:
-        if data[k] == i:
-            value_sorted_data[k] = data[k]
+    print("Data sorted by name of student: " + str(value_sorted_data))
+    # END
+
+    # Sort dictionary using SID
+    data_key.sort()
+    for i in data_key:
+        key_sorted_data[i] = data[i]
+
+    print("Data sorted by SID: " + str(key_sorted_data))
+    # END
+
+    # Search a student details with SID and print name of that student
+    sid_input = int(input("Enter SID of student you want to search "))
+    while True:
+        if sid_input in data_key:
             break
+        else:
+            sid_input = int(input("Enter a valid SID "))
 
-print("\n")
-print("Data sorted by name of student: " + str(value_sorted_data))
-# END
-
-
-# Sort dictionary using SID
-data_key.sort()
-for i in data_key:
-    key_sorted_data[i] = data[i]
-
-print("\n")
-print("Data sorted by SID: " + str(key_sorted_data))
-# END
-
-
-# Search a student details with SID and print name of that student
-sid_input = int(input("Enter SID of student you want to search "))
-while True:
-    if sid_input in data_key:
-        break
-    else:
-        sid_input = int(input("Enter a valid SID "))
-
-print(str(data[sid_input]) + " has SID " + str(sid_input))
-# END
+    print(str(data[sid_input]) + " has SID " + str(sid_input))
+    # END
